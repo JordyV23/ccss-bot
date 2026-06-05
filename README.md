@@ -43,8 +43,8 @@ Agrega dos secrets:
 
 | Nombre | Valor |
 |--------|-------|
-| `TELEGRAM_TOKEN` | Tu token del bot (ej: `8790717161:AAERUviXMIhAkwkW_AosQZCB-ZeZmoG68jo`) |
-| `TELEGRAM_CHAT_ID` | Tu CHAT_ID (ej: `799354631`) |
+| `TELEGRAM_TOKEN` | Tu token del bot |
+| `TELEGRAM_CHAT_ID` | Tu CHAT_ID |
 
 ### 3. ¡Listo! ✅
 
