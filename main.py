@@ -214,8 +214,8 @@ def main():
             url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
             datos = {"chat_id": TELEGRAM_CHAT_ID, "text": mensaje_error}
             requests.post(url, json=datos)
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
 
 def ejecutar_en_loop():
