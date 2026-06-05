@@ -236,4 +236,14 @@ def ejecutar_en_loop():
 
 
 if __name__ == "__main__":
-    ejecutar_en_loop()
+    # Detectar si se ejecuta en GitHub Actions
+    es_github_actions = os.getenv("GITHUB_ACTIONS") == "true"
+    
+    if es_github_actions:
+        # En GitHub Actions: ejecutar solo una vez
+        print("🤖 Ejecutando en GitHub Actions - Una sola ejecución\n")
+        main()
+        print("\n✅ Ejecución completada")
+    else:
+        # Localmente: usar loop con schedule
+        ejecutar_en_loop()

@@ -10,7 +10,7 @@ on:
 jobs:
   check-citas:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10  # Timeout de 10 minutos máximo por ejecución
 
     steps:
       - name: Checkout código
