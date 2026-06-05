@@ -94,7 +94,8 @@ def esta_en_horario_valido():
     hora_actual = datetime.now(tz_cr)
     hora_int = hora_actual.hour
     
-    en_horario = 6 <= hora_int < 20
+    # en_horario = 6 <= hora_int < 20
+    en_horario = True
     estado = "✓ En horario" if en_horario else "✗ Fuera de horario"
     print(f"{estado} - Hora actual Costa Rica: {hora_actual.strftime('%H:%M:%S')}")
     
