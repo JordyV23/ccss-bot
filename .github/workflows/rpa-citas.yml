@@ -4,7 +4,7 @@ on:
   schedule:
     # Ejecutar cada 10 minutos entre las 6 AM y 8 PM (UTC-6 = Costa Rica)
     # Esto ejecutará cada 10 minutos, 24/7, pero el script verificará internamente el horario
-    - cron: '0 * * * *'
+    #- cron: '0 * * * *'
   workflow_dispatch:  # Permite ejecutar manualmente desde GitHub
 
 jobs:
